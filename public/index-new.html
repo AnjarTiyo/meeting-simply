@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Simply - Ringkasan Rapat Otomatis</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/logo.png" alt="Meeting Simply Logo" class="logo">
+        <h1>Meeting Simply</h1>
+        <p>Ringkasan Rapat Otomatis</p>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Selamat Datang di Meeting Simply</h1>
+            <p>Platform cerdas untuk mengubah transkrip rapat menjadi ringkasan yang informatif dan mudah dipahami.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Analisis Otomatis</h3>
+                <p>Menganalisis transkrip rapat secara otomatis untuk mengidentifikasi poin-poin penting, peserta, dan topik pembahasan.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Ringkasan Komprehensif</h3>
+                <p>Menghasilkan ringkasan yang mencakup waktu rapat, peserta, topik pembahasan, item tindakan, dan analisis sentimen.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Mudah Digunakan</h3>
+                <p>Antarmuka yang sederhana dan intuitif untuk mengunggah file dan mendapatkan hasil dalam hitungan detik.</p>
+            </div>
+        </section>
+
+        <section class="upload-section">
+            <h2>Mulai Sekarang</h2>
+            <form class="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                <div class="file-input-wrapper">
+                    <input type="file" id="file" name="file" class="file-input" accept=".txt" required>
+                    <label for="file" class="file-label">Pilih File Transkrip (.txt)</label>
+                </div>
+                <button type="submit" class="file-label">Analisis Transkrip</button>
+            </form>
+        </section>
+
+        <section class="instructions">
+            <h3>Petunjuk Penggunaan</h3>
+            <ul>
+                <li>Unggah file transkrip rapat dalam format teks (.txt)</li>
+                <li>Pastikan format transkrip rapat sudah sesuai dengan panduan</li>
+                <li>Sistem akan menganalisis transkrip secara otomatis</li>
+                <li>Hasil analisis dapat diunduh dalam format PDF</li>
+                <li>Ringkasan dapat dibagikan melalui email kepada peserta rapat</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Dibuat oleh Anjar Tiyo Saputro, Aprizal Prima Putra, Khoiriya Latifa</p>
+        <p>Universitas PGRI Semarang</p>
+        <!-- <p>© 2024 Meeting Simply. Hak Cipta Dilindungi.</p> -->
+    </footer>
+</body>
+</html> 

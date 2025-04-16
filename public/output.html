@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .timestamp {
+            font-style: italic;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transcript Report</h1>
+    <div class="timestamp"></div>
+    <h2>Time of Meeting</h2>
+    <p id="meeting-time"></p>
+
+    <h2>Participants</h2>
+    <ul id="participants"></ul>
+
+    <h2>Topics Discussed</h2>
+    <ul id="topics"></ul>
+
+    <h2>Summary</h2>
+    <p id="summary"></p>
+
+    <h2>Action Items</h2>
+    <ul id="actionable-items"></ul>
+
+    <h2>Sentiment Analysis</h2>
+    <ul id="sentiment"></ul>
+
+    <script>
+        // Function to populate the report with data
+        function populateReport(data) {
+            document.querySelector('.timestamp').innerText = `Generated on: ${new Date().toLocaleString()}`;
+            document.getElementById('meeting-time').innerText = data.time;
+
+            const participantsList = document.getElementById('participants');
+            participantsList.innerHTML = '';
+            data.participant.forEach(participant => {
+                const li = document.createElement('li');
+                li.innerText = `${participant.name}: ${participant.talktime} seconds`;
+                participantsList.appendChild(li);
+            });
+
+            const topicsList = document.getElementById('topics');
+            topicsList.innerHTML = '';
+            data.topics.forEach(topic => {
+                const li = document.createElement('li');
+                li.innerText = topic;
+                topicsList.appendChild(li);
+            });
+
+            document.getElementById('summary').innerText = data.summary;
+
+            const actionableList = document.getElementById('actionable-items');
+            actionableList.innerHTML = '';
+            data.actionable.forEach(action => {
+                const li = document.createElement('li');
+                li.innerText = `${action.actionable} (Deadline: ${action.deadline})`;
+                actionableList.appendChild(li);
+            });
+
+            const sentimentList = document.getElementById('sentiment');
+            sentimentList.innerHTML = '';
+            data.sentiment.forEach(sentiment => {
+                const li = document.createElement('li');
+                li.innerText = `${sentiment.type}: ${sentiment.value}`;
+                sentimentList.appendChild(li);
+            });
+        }
+
+        // Fetch and display data
+        fetch('/output/transcript_report.json')
+            .then(response => response.json())
+            .then(data => populateReport(data))
+            .catch(error => console.error('Error fetching the report data:', error));
+    </script>
+</body>
+</html>

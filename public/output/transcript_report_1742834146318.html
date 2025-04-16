@@ -1,0 +1,243 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Transcript Report</title>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                <style>
+                    body { 
+                        font-family: 'Inter', sans-serif; 
+                        line-height: 1.6; 
+                        background-color: #f8fafc; 
+                        margin: 0; 
+                        padding: 20px; 
+                        color: #1e293b; 
+                    }
+                    .container { 
+                        max-width: 1000px; 
+                        margin: auto; 
+                        background: #fff; 
+                        padding: 40px; 
+                        border-radius: 16px; 
+                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+                    }
+                    .header {
+                        text-align: center;
+                        margin-bottom: 40px;
+                        padding-bottom: 20px;
+                        border-bottom: 2px solid #e2e8f0;
+                    }
+                    h1 { 
+                        color: #1e40af;
+                        font-size: 2.5rem;
+                        margin-bottom: 10px;
+                    }
+                    h2 { 
+                        color: #2563eb;
+                        font-size: 1.5rem;
+                        margin: 30px 0 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .section {
+                        background: #fff;
+                        border-radius: 12px;
+                        padding: 25px;
+                        margin-bottom: 30px;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                    }
+                    ul { 
+                        list-style-type: none; 
+                        padding: 0; 
+                        margin: 0;
+                    }
+                    li { 
+                        margin: 12px 0; 
+                        padding: 12px 16px; 
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .participant { 
+                        background-color: #eff6ff;
+                        border-left: 4px solid #3b82f6;
+                    }
+                    .action-item { 
+                        background-color: #fff7ed;
+                        border-left: 4px solid #f97316;
+                    }
+                    .sentiment { 
+                        background-color: #fdf2f8;
+                        border-left: 4px solid #ec4899;
+                    }
+                    .summary { 
+                        background-color: #f0fdf4;
+                        padding: 20px;
+                        margin: 10px 0;
+                        border-radius: 8px;
+                        font-style: italic;
+                        border-left: 4px solid #22c55e;
+                    }
+                    .timestamp { 
+                        font-weight: 500;
+                        color: #64748b;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+                    .metadata {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        padding: 15px;
+                        background: #f8fafc;
+                        border-radius: 8px;
+                    }
+                    .badge {
+                        background: #e2e8f0;
+                        padding: 6px 12px;
+                        border-radius: 20px;
+                        font-size: 0.875rem;
+                        color: #64748b;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <div class="header">
+                        <h1><i class="fas fa-file-alt"></i> Meeting Transcript Report</h1>
+                    </div>
+                    
+                    <div class="metadata">
+                        <div class="timestamp">
+                            <i class="far fa-clock"></i>
+                            <span>Meeting Time: Rabu, 23-okt-2024 10:00:00 to 10:05:00</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-calendar-check"></i>
+                            Generated: 3/25/2025, 12:35:46 AM
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2><i class="fas fa-chart-pie"></i> Executive Summary</h2>
+                        <p class="summary">Bu Mira mengekspresikan kekesalannya terhadap progres yang lambat dan menekankan pentingnya menyelesaikan proyek tepat waktu. Bu Sari menjelaskan bahwa revisi dari klien menyebabkan keterlambatan, sementara Pak Anjar mengungkapkan kekhawatirannya tentang waktu yang dibutuhkan untuk backend dan frontend. Bu Mira menetapkan deadline yang ketat untuk semua bagian proyek dan meminta semua peserta untuk memberikan update progres secara rutin.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2><i class="fas fa-users"></i> Participants Analysis</h2>
+                        <ul>
+                            
+                                <li class="participant">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>Bu Mira: 56% talk time</span>
+                                </li>
+                            
+                                <li class="participant">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>Bu Sari: 20% talk time</span>
+                                </li>
+                            
+                                <li class="participant">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>Pak Anjar: 24% talk time</span>
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><i class="fas fa-tags"></i> Topics Discussed</h2>
+                        <ul>
+                            
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Progres desain UI/UX
+                                </li>
+                            
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Backend development
+                                </li>
+                            
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Frontend development
+                                </li>
+                            
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Timeline dan deadline proyek
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><i class="fas fa-tasks"></i> Action Items</h2>
+                        <ul>
+                            
+                                <li class="action-item">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <span>Desain UI/UX selesai</span>
+                                    <div class="badge">
+                                        <i class="far fa-calendar"></i>
+                                        30-okt-2024
+                                    </div>
+                                </li>
+                            
+                                <li class="action-item">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <span>Backend selesai</span>
+                                    <div class="badge">
+                                        <i class="far fa-calendar"></i>
+                                        14-nov-2024
+                                    </div>
+                                </li>
+                            
+                                <li class="action-item">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <span>Frontend selesai</span>
+                                    <div class="badge">
+                                        <i class="far fa-calendar"></i>
+                                        21-nov-2024
+                                    </div>
+                                </li>
+                            
+                                <li class="action-item">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <span>Pengujian selesai</span>
+                                    <div class="badge">
+                                        <i class="far fa-calendar"></i>
+                                        28-nov-2024
+                                    </div>
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2><i class="fas fa-chart-line"></i> Sentiment Analysis</h2>
+                        <ul>
+                            
+                                <li class="sentiment">
+                                    <i class="fas fa-heart"></i>
+                                    <span>negative: 80%</span>
+                                </li>
+                            
+                                <li class="sentiment">
+                                    <i class="fas fa-heart"></i>
+                                    <span>neutral: 20%</span>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </body>
+            </html>

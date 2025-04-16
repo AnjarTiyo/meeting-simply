@@ -1,0 +1,166 @@
+
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Simply - Hasil Analisis</title>
+        <link rel="stylesheet" href="/public/styles.css">
+        <style>
+    body { 
+        font-family: 'Segoe UI', Arial, sans-serif; 
+        line-height: 1.6; 
+        background-color: var(--background-color); 
+        margin: 0; 
+        padding: 20px; 
+        color: var(--text-color); 
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .container { 
+        max-width: 900px; 
+        margin: auto; 
+        background: #fff; 
+        padding: 30px; 
+        border-radius: 12px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    ul { 
+        list-style-type: none; 
+        padding: 0; 
+    }
+    li { 
+        margin: 12px 0; 
+        padding: 12px 15px; 
+        border-radius: 6px; 
+        transition: transform 0.2s;
+    }
+    li:hover {
+        transform: translateX(5px);
+    }
+    .participant { 
+        background-color: #e3f2fd; 
+        border-left: 4px solid #2196f3;
+    }
+    .action-item { 
+        background-color: #fff3e0; 
+        border-left: 4px solid #ff9800;
+    }
+    .sentiment { 
+        background-color: #fce4ec; 
+        border-left: 4px solid #e91e63;
+    }
+    .summary { 
+        background-color: #e8f5e9; 
+        padding: 15px; 
+        margin: 10px 0; 
+        border-radius: 6px; 
+        font-style: italic;
+        border-left: 4px solid #4caf50;
+    }
+    .timestamp { 
+        font-weight: bold; 
+        color: var(--accent-color); 
+    }
+    .download-section {
+        text-align: center;
+        margin-top: 30px;
+        padding: 20px;
+        background: var(--light-gray);
+        border-radius: 8px;
+    }
+    .download-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+    .download-button:hover {
+        background: var(--secondary-color);
+    }
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        padding: 20px;
+        color: #666;
+        font-size: 0.9em;
+    }
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="/logo.png" alt="Meeting Simply Logo" class="logo">
+                <h1>Meeting Simply</h1>
+                <p>Hasil Analisis Rapat</p>
+            </div>
+
+            <div class="section">
+                <h2>Ringkasan Rapat</h2>
+                <p><strong>Waktu:</strong> Rabu, 23-okt-2024 10:00:00 to 10:05:00</p>
+                <p class="summary">Bu Mira mengekspresikan kekesalannya terhadap progres yang lambat dan menekankan pentingnya menyelesaikan proyek tepat waktu. Bu Sari menjelaskan bahwa revisi dari klien menyebabkan keterlambatan, sementara Pak Anjar mengungkapkan kekhawatirannya tentang waktu yang dibutuhkan untuk backend dan frontend. Bu Mira menetapkan deadline yang ketat untuk desain, backend, dan frontend, serta meminta update progres secara berkala.</p>
+            </div>
+
+            <div class="section">
+                <h2>Peserta dan Persentase Bicara</h2>
+                <ul>
+                    <li class="participant">Bu Mira: 56%</li><li class="participant">Bu Sari: 20%</li><li class="participant">Pak Anjar: 24%</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Topik Pembahasan</h2>
+                <ul>
+                    <li>Progres desain UI/UX</li><li>Backend development</li><li>Frontend development</li><li>Timeline dan deadline proyek</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Item Tindakan</h2>
+                <ul>
+                    <li class="action-item">Desain UI/UX selesai (Batas Waktu: 30-okt-2024)</li><li class="action-item">Backend selesai (Batas Waktu: 14-nov-2024)</li><li class="action-item">Frontend selesai (Batas Waktu: 21-nov-2024)</li><li class="action-item">Pengujian selesai (Batas Waktu: 28-nov-2024)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Analisis Sentimen</h2>
+                <ul>
+                    <li class="sentiment">negative: 80%</li><li class="sentiment">neutral: 20%</li>
+                </ul>
+            </div>
+
+            <div class="download-section">
+                <h3>Unduh Hasil</h3>
+                <p>Klik tombol di bawah untuk mengunduh hasil analisis dalam format PDF</p>
+                <a href="/download" class="download-button">Unduh PDF</a>
+            </div>
+
+            <div class="footer">
+                <p>Dibuat dengan ❤️ oleh Meeting Simply</p>
+                <p>Dibuat pada: 25/3/2025, 00.01.18</p>
+            </div>
+        </div>
+    </body>
+    </html>
