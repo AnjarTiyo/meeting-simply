@@ -1,56 +1,56 @@
 # Meeting Simply
 
-A web application for managing and processing meeting-related tasks.
+Aplikasi web untuk mengelola dan memproses tugas-tugas terkait rapat.
 
-## Prerequisites
+## Persyaratan
 
-- Node.js (v14 or higher)
+- Node.js (v14 atau lebih tinggi)
 - npm (Node Package Manager)
 
-## Installation
+## Instalasi
 
-1. Clone the repository:
+1. Clone repository:
 ```bash
-git clone [your-repository-url]
+git clone [url-repository-anda]
 cd meeting-simply
 ```
 
-2. Install dependencies:
+2. Install dependensi:
 ```bash
 npm install
 ```
 
-3. Create a `.env` file in the root directory and add your environment variables:
+3. Buat file `.env` di direktori utama dan tambahkan variabel lingkungan:
 ```
-OPENAI_API_KEY=your_openai_api_key
+OPENAI_API_KEY=kunci_api_openai_anda
 ```
 
-## Running the Application
+## Menjalankan Aplikasi
 
-Start the development server:
+Mulai server pengembangan:
 ```bash
 npm start
 ```
 
-The application will be available at `http://localhost:3000` (or the port specified in your server configuration).
+Aplikasi akan tersedia di `http://localhost:3000` (atau port yang ditentukan dalam konfigurasi server Anda).
 
-## Project Structure
+## Struktur Proyek
 
-- `server.js` - Main server file
-- `openai.js` - OpenAI API integration
-- `prompt.js` - Prompt templates
-- `pages/` - Frontend pages
-- `public/` - Static assets
-- `uploads/` - File upload directory
+- `server.js` - File server utama
+- `openai.js` - Integrasi API OpenAI
+- `prompt.js` - Template prompt
+- `pages/` - Halaman frontend
+- `public/` - Aset statis
+- `uploads/` - Direktori untuk file yang diunggah
 
-## Dependencies
+## Dependensi
 
-- express - Web framework
-- dotenv - Environment variable management
-- multer - File upload handling
-- openai - OpenAI API client
-- nodemon - Development server with auto-reload
+- express - Framework web
+- dotenv - Manajemen variabel lingkungan
+- multer - Penanganan unggahan file
+- openai - Klien API OpenAI
+- nodemon - Server pengembangan dengan auto-reload
 
-## License
+## Lisensi
 
 ISC 
